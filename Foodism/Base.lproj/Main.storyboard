@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="287" width="320" height="281"/>
                                 <state key="normal" title="Explore"/>
                                 <connections>
-                                    <segue destination="MB2-Fo-Gvy" kind="modal" id="vx2-No-CBq"/>
+                                    <segue destination="MB2-Fo-Gvy" kind="modal" animates="NO" id="vx2-No-CBq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +82,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EdZ-Xt-eDS" customClass="RecipeCollectionViewCell" customModule="Foodism" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="123" height="121"/>
+                                <rect key="frame" x="0.0" y="64" width="123" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="123" height="121"/>
@@ -95,13 +95,13 @@
                                             <rect key="frame" x="38" y="91" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
-                                                <segue destination="O5b-NS-SjJ" kind="modal" id="j48-qn-ngi"/>
+                                                <segue destination="O5b-NS-SjJ" kind="modal" animates="NO" id="j48-qn-ngi"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-WO-M1S">
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
                                             <connections>
-                                                <segue destination="O5b-NS-SjJ" kind="modal" id="uUN-pR-v5a"/>
+                                                <segue destination="O5b-NS-SjJ" kind="modal" animates="NO" id="uUN-pR-v5a"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -129,12 +129,16 @@
                             <outlet property="delegate" destination="NUb-tA-OhL" id="xKF-jT-dme"/>
                         </connections>
                     </collectionView>
-                    <toolbarItems>
-                        <barButtonItem title="go Back" id="fW7-yW-In6"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="ZnM-aF-Wz0"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZnM-aF-Wz0">
+                        <barButtonItem key="leftBarButtonItem" title="go Back" id="fW7-yW-In6">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="modal" animates="NO" id="RYZ-Lf-nB9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1U-4z-NI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,7 +301,7 @@
                                         <rect key="frame" x="20" y="21" width="58" height="30"/>
                                         <state key="normal" title="Go Back"/>
                                         <connections>
-                                            <segue destination="NUb-tA-OhL" kind="modal" id="LY0-sy-7IX"/>
+                                            <segue destination="NUb-tA-OhL" kind="modal" animates="NO" id="LY0-sy-7IX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -315,7 +319,6 @@
         <!--Navigation Controller-->
         <scene sceneID="xX2-Am-0Y2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tjo-H3-mvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MB2-Fo-Gvy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="u5Q-oK-IJW">
@@ -327,6 +330,7 @@
                         <segue destination="NUb-tA-OhL" kind="relationship" relationship="rootViewController" id="1eq-5f-xpz"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjo-H3-mvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="227" y="487"/>
         </scene>
@@ -337,8 +341,8 @@
         <image name="search page final" width="1548" height="2778"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BPd-Qe-qrP"/>
+        <segue reference="RYZ-Lf-nB9"/>
         <segue reference="1eq-5f-xpz"/>
-        <segue reference="j48-qn-ngi"/>
+        <segue reference="uUN-pR-v5a"/>
     </inferredMetricsTieBreakers>
 </document>
