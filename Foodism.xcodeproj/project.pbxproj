@@ -23,6 +23,9 @@
 		7D9CED2A1C66702F00519DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED281C66702F00519DDA /* LaunchScreen.storyboard */; };
 		7DF3CD2C1C679631006B771F /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3CD2B1C679631006B771F /* ScrollViewController.swift */; };
 		7DF3CD2E1C679F44006B771F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3CD2D1C679F44006B771F /* PageViewController.swift */; };
+		7DF3CD311C67B314006B771F /* first pageeee.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3CD2F1C67B314006B771F /* first pageeee.png */; };
+		7DF3CD321C67B314006B771F /* first pageeee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3CD301C67B314006B771F /* first pageeee@2x.png */; };
+		7DF3CD341C67B43E006B771F /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3CD331C67B43E006B771F /* splashViewController.swift */; };
 		C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		7D9CED2B1C66702F00519DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF3CD2B1C679631006B771F /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		7DF3CD2D1C679F44006B771F /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7DF3CD2F1C67B314006B771F /* first pageeee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first pageeee.png"; path = "../../Downloads/first pageeee.png"; sourceTree = "<group>"; };
+		7DF3CD301C67B314006B771F /* first pageeee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first pageeee@2x.png"; path = "../../Downloads/first pageeee@2x.png"; sourceTree = "<group>"; };
+		7DF3CD331C67B43E006B771F /* splashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
 		C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Add Recipe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +68,8 @@
 		7D9CED131C66702F00519DDA = {
 			isa = PBXGroup;
 			children = (
+				7DF3CD2F1C67B314006B771F /* first pageeee.png */,
+				7DF3CD301C67B314006B771F /* first pageeee@2x.png */,
 				25EAF0E81C6705F500E4BBD8 /* KSToken.swift */,
 				25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */,
 				25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */,
@@ -85,6 +93,7 @@
 				25EAF0F11C67060200E4BBD8 /* List.swift */,
 				C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */,
 				7D9CED1F1C66702F00519DDA /* AppDelegate.swift */,
+				7DF3CD331C67B43E006B771F /* splashViewController.swift */,
 				7D27787C1C6739A3002D5145 /* mainViewController.swift */,
 				7DF3CD2B1C679631006B771F /* ScrollViewController.swift */,
 				7D9CED211C66702F00519DDA /* ViewController.swift */,
@@ -158,8 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF3CD311C67B314006B771F /* first pageeee.png in Resources */,
 				7D9CED2A1C66702F00519DDA /* LaunchScreen.storyboard in Resources */,
 				7D9CED271C66702F00519DDA /* Assets.xcassets in Resources */,
+				7DF3CD321C67B314006B771F /* first pageeee@2x.png in Resources */,
 				7D9CED251C66702F00519DDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +187,7 @@
 				7D2E7A591C66F6510010DEE5 /* RecipeCollectionViewCell.swift in Sources */,
 				C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */,
 				25EAF0F21C67060200E4BBD8 /* List.swift in Sources */,
+				7DF3CD341C67B43E006B771F /* splashViewController.swift in Sources */,
 				25EAF0F61C670BDF00E4BBD8 /* KSTokenView_viewcontroller.swift in Sources */,
 				7D9CED221C66702F00519DDA /* ViewController.swift in Sources */,
 				7D9CED201C66702F00519DDA /* AppDelegate.swift in Sources */,

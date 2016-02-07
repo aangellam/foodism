@@ -20,9 +20,9 @@ class CollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view, typically from a nib.
        
         self.collectionView?.collectionViewLayout = RecipeLayout()
-        ButtonArray = ["Szechwan Shrimp","Fluffy Pancake","Coconut Chicken","Mapled Salmon","Cranberry Salad"]
-        imageNames = ["pic shrimp","pic pancakes","pic  chick","pic salmon","pic salad"]
-        pageNames = ["menu shrimp","menu pancakes","menu coconut chicken","menu salmon","menu salad2"]
+        ButtonArray = ["Szechwan Shrimp","Fluffy Pancake","Coconut Chicken","Mapled Salmon","Cranberry Salad","Szechwan Shrimp","Fluffy Pancake","Coconut Chicken","Mapled Salmon","Cranberry Salad","Szechwan Shrimp","Fluffy Pancake","Coconut Chicken","Mapled Salmon","Cranberry Salad"]
+        imageNames = ["pic shrimp","pic pancakes","pic coconut chick","pic salmon","pic salad","pic shrimp","pic pancakes","pic coconut chick","pic salmon","pic salad","pic shrimp","pic pancakes","pic coconut chick","pic salmon","pic salad"]
+        pageNames = ["menu shrimp 2","menu pancakes 2","menu coconut chicken 2","menu slamon","menu salad2 2","menu shrimp 2","menu pancakes 2","menu coconut chicken 2","menu slamon","menu salad2 2","menu shrimp 2","menu pancakes 2","menu coconut chicken 2","menu slamon","menu salad2 2"]
         
       //  self.collectionView?.delegate = self
         
