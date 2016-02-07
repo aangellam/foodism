@@ -13,35 +13,43 @@ class CollectionViewController: UICollectionViewController {
 //angel's part
     var ButtonArray = [String] ()
     var imageNames = [String] ()
+    var pageNames = [String] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
         self.collectionView?.collectionViewLayout = RecipeLayout()
-        ButtonArray = ["Angry cake","Creme","egg","break","Angry cake","Creme","egg","break","Angry cake","Creme","egg","break","Angry cake","Creme","egg","break","Angry cake","Creme","egg","break","Angry cake","Creme","egg","break"]
-        imageNames = ["angry_birds_cake","creme_brelee","egg_benedict","full_breakfast","angry_birds_cake","creme_brelee","egg_benedict","full_breakfast","angry_birds_cake","creme_brelee","egg_benedict","full_breakfast","angry_birds_cake","creme_brelee","egg_benedict","full_breakfast","angry_birds_cake","creme_brelee","egg_benedict","full_breakfast","angry_birds_cake","creme_brelee","egg_benedict","full_breakfast", ]
+        ButtonArray = ["Szechwan Shrimp","Fluffy Pancake","Coconut Chicken","Mapled Salmon","Cranberry Salad"]
+        imageNames = ["pic shrimp","pic pancakes","pic  chick","pic salmon","pic salad"]
+        pageNames = ["menu shrimp","menu pancakes","menu coconut chicken","menu salmon","menu salad2"]
+        
+      //  self.collectionView?.delegate = self
         
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ButtonArray.count
     }
-    
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : RecipeCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! RecipeCollectionViewCell
         cell.titleButton.setTitle(ButtonArray[indexPath.row], forState: UIControlState.Normal)
         cell.imageView.image = UIImage(named:imageNames[indexPath.row])
-        
-        
-        
         return cell
+        
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        print("SELECTED CELL")
+        let pageController : PageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("pageController") as! PageViewController
+        
+        pageController.imageCame = pageNames[indexPath.row]
+        
+        self.presentViewController(pageController, animated: true, completion: nil)
         
         
     }
