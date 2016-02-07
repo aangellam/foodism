@@ -9,7 +9,8 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController {
-
+    
+//angel's part
     var ButtonArray = [String] ()
     var imageNames = [String] ()
     
@@ -34,7 +35,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell : RecipeCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! RecipeCollectionViewCell
+        let cell : RecipeCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! RecipeCollectionViewCell
         cell.titleButton.setTitle(ButtonArray[indexPath.row], forState: UIControlState.Normal)
         cell.imageView.image = UIImage(named:imageNames[indexPath.row])
         

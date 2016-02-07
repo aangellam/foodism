@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "67196B95F59D25F1648CB2C6BBA03607C75C1F50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67196B95F59D25F1648CB2C6BBA03607C75C1F50" : 0,
+    "0E45D217A8F08D6C5F8DE2B1B2A6647649D2DED7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "36646FD3-08B4-4AAE-BB1E-B4CF573D022B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67196B95F59D25F1648CB2C6BBA03607C75C1F50" : "foodism\/",
+    "0E45D217A8F08D6C5F8DE2B1B2A6647649D2DED7" : "KSTokenView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Foodism",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Foodism.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/khawars\/KSTokenView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E45D217A8F08D6C5F8DE2B1B2A6647649D2DED7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/angellam278\/foodism.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67196B95F59D25F1648CB2C6BBA03607C75C1F50"
+    }
+  ]
+}
