@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2E7A591C66F6510010DEE5 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E7A581C66F6510010DEE5 /* RecipeCollectionViewCell.swift */; };
+		7D2E7A5D1C66F8850010DEE5 /* RecipeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E7A5C1C66F8850010DEE5 /* RecipeLayout.swift */; };
 		7D9CED201C66702F00519DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9CED1F1C66702F00519DDA /* AppDelegate.swift */; };
 		7D9CED221C66702F00519DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9CED211C66702F00519DDA /* ViewController.swift */; };
 		7D9CED251C66702F00519DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED231C66702F00519DDA /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D2E7A581C66F6510010DEE5 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D2E7A5C1C66F8850010DEE5 /* RecipeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeLayout.swift; sourceTree = "<group>"; };
 		7D9CED1C1C66702F00519DDA /* Foodism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9CED1F1C66702F00519DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D9CED211C66702F00519DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				7D9CED1F1C66702F00519DDA /* AppDelegate.swift */,
 				7D9CED211C66702F00519DDA /* ViewController.swift */,
 				7D9CED231C66702F00519DDA /* Main.storyboard */,
+				7D2E7A5C1C66F8850010DEE5 /* RecipeLayout.swift */,
+				7D2E7A581C66F6510010DEE5 /* RecipeCollectionViewCell.swift */,
 				7D9CED261C66702F00519DDA /* Assets.xcassets */,
 				7D9CED281C66702F00519DDA /* LaunchScreen.storyboard */,
 				7D9CED2B1C66702F00519DDA /* Info.plist */,
@@ -200,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2E7A5D1C66F8850010DEE5 /* RecipeLayout.swift in Sources */,
+				7D2E7A591C66F6510010DEE5 /* RecipeCollectionViewCell.swift in Sources */,
 				C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */,
 				7D9CED221C66702F00519DDA /* ViewController.swift in Sources */,
 				7D9CED201C66702F00519DDA /* AppDelegate.swift in Sources */,

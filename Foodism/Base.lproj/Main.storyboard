@@ -21,13 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="first page final" translatesAutoresizingMaskIntoConstraints="NO" id="OzF-6i-7hU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9A-hn-4yZ">
-                                <rect key="frame" x="0.0" y="287" width="320" height="281"/>
-                                <state key="normal" title="Explore"/>
-                                <connections>
-                                    <segue destination="NUb-tA-OhL" kind="modal" id="vx2-No-CBq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndX-ZL-1bK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
                                 <constraints>
@@ -43,6 +36,13 @@
                                 <state key="normal" title="Add Recipe"/>
                                 <connections>
                                     <segue destination="ZKy-tA-z7U" kind="modal" id="JlP-49-7na"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9A-hn-4yZ">
+                                <rect key="frame" x="0.0" y="287" width="320" height="281"/>
+                                <state key="normal" title="Explore"/>
+                                <connections>
+                                    <segue destination="MB2-Fo-Gvy" kind="modal" id="vx2-No-CBq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,25 +69,59 @@
         <!--Collection View Controller-->
         <scene sceneID="i7g-zw-bhn">
             <objects>
-                <collectionViewController id="NUb-tA-OhL" sceneMemberID="viewController">
+                <collectionViewController id="NUb-tA-OhL" customClass="CollectionViewController" customModule="Foodism" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hkY-f3-hFp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99326580190000002" blue="0.99534756229999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="caD-jH-M3a">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="123" height="121"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nxq-E3-w03">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EdZ-Xt-eDS" customClass="RecipeCollectionViewCell" customModule="Foodism" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="123" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="121"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-GX-jgx">
+                                            <rect key="frame" x="-2" y="0.0" width="126" height="96"/>
+                                        </imageView>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-bG-Lg3">
+                                            <rect key="frame" x="38" y="91" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <segue destination="O5b-NS-SjJ" kind="modal" id="j48-qn-ngi"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-WO-M1S">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                                            <connections>
+                                                <segue destination="O5b-NS-SjJ" kind="modal" id="uUN-pR-v5a"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="1" green="0.99326580190000002" blue="0.99534756229999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9fd-WO-M1S" firstAttribute="leading" secondItem="EdZ-Xt-eDS" secondAttribute="leadingMargin" constant="-8" id="6k1-Zv-jlF"/>
+                                    <constraint firstItem="hgJ-bG-Lg3" firstAttribute="leading" secondItem="EdZ-Xt-eDS" secondAttribute="leadingMargin" constant="30" id="B2n-hK-Jkt"/>
+                                    <constraint firstItem="9fd-WO-M1S" firstAttribute="top" secondItem="EdZ-Xt-eDS" secondAttribute="topMargin" constant="-8" id="LS3-cA-UHh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="hgJ-bG-Lg3" secondAttribute="bottom" constant="-8" id="SND-F6-MHd"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hgJ-bG-Lg3" secondAttribute="trailing" constant="31" id="WEf-Ab-EeK"/>
+                                    <constraint firstItem="hgJ-bG-Lg3" firstAttribute="top" secondItem="EdZ-Xt-eDS" secondAttribute="topMargin" constant="83" id="Zer-8A-ePl"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="9fd-WO-M1S" secondAttribute="bottom" constant="17" id="e7Z-lQ-rLX"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="9fd-WO-M1S" secondAttribute="trailing" constant="-9" id="qyS-XK-PQ1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="pIb-GX-jgx" id="zFu-0b-c0p"/>
+                                    <outlet property="titleButton" destination="hgJ-bG-Lg3" id="WY7-k2-TBW"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -95,10 +129,16 @@
                             <outlet property="delegate" destination="NUb-tA-OhL" id="xKF-jT-dme"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems>
+                        <barButtonItem title="go Back" id="fW7-yW-In6"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="ZnM-aF-Wz0"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1U-4z-NI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595.73333333333335" y="447.77333333333331"/>
+            <point key="canvasLocation" x="609" y="487"/>
         </scene>
         <!--Add Recipe-->
         <scene sceneID="CMj-mG-9Jh">
@@ -229,25 +269,25 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG6-Nq-WGq">
                                         <rect key="frame" x="20" y="520" width="58" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLs-KB-XUY">
                                         <rect key="frame" x="20" y="415" width="78" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g95-Ls-Ds1">
                                         <rect key="frame" x="20" y="270" width="86" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHF-HW-Pen">
                                         <rect key="frame" x="20" y="188" width="45" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-V4-LkL">
@@ -257,7 +297,7 @@
                                         <rect key="frame" x="20" y="21" width="58" height="30"/>
                                         <state key="normal" title="Go Back"/>
                                         <connections>
-                                            <segue destination="NUb-tA-OhL" kind="modal" id="PbS-OR-td0"/>
+                                            <segue destination="NUb-tA-OhL" kind="modal" id="LY0-sy-7IX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -265,10 +305,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iwb-db-3He"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEb-fS-ZRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977.06666666666661" y="447.77333333333331"/>
+            <point key="canvasLocation" x="1111" y="285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xX2-Am-0Y2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjo-H3-mvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MB2-Fo-Gvy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u5Q-oK-IJW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NUb-tA-OhL" kind="relationship" relationship="rootViewController" id="1eq-5f-xpz"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="227" y="487"/>
         </scene>
     </scenes>
     <resources>
@@ -277,7 +337,8 @@
         <image name="search page final" width="1548" height="2778"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vx2-No-CBq"/>
-        <segue reference="hKb-fR-8ux"/>
+        <segue reference="BPd-Qe-qrP"/>
+        <segue reference="1eq-5f-xpz"/>
+        <segue reference="j48-qn-ngi"/>
     </inferredMetricsTieBreakers>
 </document>
