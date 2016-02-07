@@ -13,6 +13,7 @@
 		7D9CED271C66702F00519DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED261C66702F00519DDA /* Assets.xcassets */; };
 		7D9CED2A1C66702F00519DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED281C66702F00519DDA /* LaunchScreen.storyboard */; };
 		7D9CED351C66702F00519DDA /* FoodismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9CED341C66702F00519DDA /* FoodismTests.swift */; };
+		C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7D9CED301C66702F00519DDA /* FoodismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9CED341C66702F00519DDA /* FoodismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodismTests.swift; sourceTree = "<group>"; };
 		7D9CED361C66702F00519DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Add Recipe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		7D9CED1E1C66702F00519DDA /* Foodism */ = {
 			isa = PBXGroup;
 			children = (
+				C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */,
 				7D9CED1F1C66702F00519DDA /* AppDelegate.swift */,
 				7D9CED211C66702F00519DDA /* ViewController.swift */,
 				7D9CED231C66702F00519DDA /* Main.storyboard */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */,
 				7D9CED221C66702F00519DDA /* ViewController.swift in Sources */,
 				7D9CED201C66702F00519DDA /* AppDelegate.swift in Sources */,
 			);
@@ -325,10 +329,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Foodism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cgmonster.Foodism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Foodism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cgmonster.Foodism;
@@ -386,6 +393,7 @@
 				7D9CED3B1C66702F00519DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D9CED3C1C66702F00519DDA /* Build configuration list for PBXNativeTarget "FoodismTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +402,7 @@
 				7D9CED3E1C66702F00519DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
