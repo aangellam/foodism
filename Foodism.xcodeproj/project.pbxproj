@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25EAF0ED1C6705F500E4BBD8 /* KSToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0E81C6705F500E4BBD8 /* KSToken.swift */; };
-		25EAF0EE1C6705F500E4BBD8 /* KSTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */; };
-		25EAF0EF1C6705F500E4BBD8 /* KSTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */; };
-		25EAF0F01C6705F500E4BBD8 /* KSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0EB1C6705F500E4BBD8 /* KSUtils.swift */; };
+		25C5BAFF1C67297100DD5C9E /* KSToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0E81C6705F500E4BBD8 /* KSToken.swift */; };
+		25C5BB001C67297100DD5C9E /* KSTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */; };
+		25C5BB011C67297100DD5C9E /* KSTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */; };
+		25C5BB021C67297100DD5C9E /* KSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0EB1C6705F500E4BBD8 /* KSUtils.swift */; };
 		25EAF0F21C67060200E4BBD8 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0F11C67060200E4BBD8 /* List.swift */; };
 		25EAF0F61C670BDF00E4BBD8 /* KSTokenView_viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAF0F51C670BDF00E4BBD8 /* KSTokenView_viewcontroller.swift */; };
 		7D2E7A591C66F6510010DEE5 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E7A581C66F6510010DEE5 /* RecipeCollectionViewCell.swift */; };
@@ -20,25 +20,14 @@
 		7D9CED251C66702F00519DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED231C66702F00519DDA /* Main.storyboard */; };
 		7D9CED271C66702F00519DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED261C66702F00519DDA /* Assets.xcassets */; };
 		7D9CED2A1C66702F00519DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9CED281C66702F00519DDA /* LaunchScreen.storyboard */; };
-		7D9CED351C66702F00519DDA /* FoodismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9CED341C66702F00519DDA /* FoodismTests.swift */; };
 		C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7D9CED311C66702F00519DDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D9CED141C66702F00519DDA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D9CED1B1C66702F00519DDA;
-			remoteInfo = Foodism;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		25EAF0E81C6705F500E4BBD8 /* KSToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSToken.swift; path = ../../KSTokenView/KSToken.swift; sourceTree = "<group>"; };
-		25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSTokenField.swift; path = ../../KSTokenView/KSTokenField.swift; sourceTree = "<group>"; };
-		25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSTokenView.swift; path = ../../KSTokenView/KSTokenView.swift; sourceTree = "<group>"; };
-		25EAF0EB1C6705F500E4BBD8 /* KSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSUtils.swift; path = ../../KSTokenView/KSUtils.swift; sourceTree = "<group>"; };
+		25EAF0E81C6705F500E4BBD8 /* KSToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSToken.swift; path = Foodism/KSToken.swift; sourceTree = "<group>"; };
+		25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSTokenField.swift; path = Foodism/KSTokenField.swift; sourceTree = "<group>"; };
+		25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSTokenView.swift; path = Foodism/KSTokenView.swift; sourceTree = "<group>"; };
+		25EAF0EB1C6705F500E4BBD8 /* KSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSUtils.swift; path = Foodism/KSUtils.swift; sourceTree = "<group>"; };
 		25EAF0F11C67060200E4BBD8 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		25EAF0F51C670BDF00E4BBD8 /* KSTokenView_viewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTokenView_viewcontroller.swift; sourceTree = "<group>"; };
 		7D2E7A581C66F6510010DEE5 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -50,9 +39,6 @@
 		7D9CED261C66702F00519DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D9CED291C66702F00519DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D9CED2B1C66702F00519DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D9CED301C66702F00519DDA /* FoodismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D9CED341C66702F00519DDA /* FoodismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodismTests.swift; sourceTree = "<group>"; };
-		7D9CED361C66702F00519DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D3EB781C66CA9600A32FBA /* Add Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Add Recipe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,34 +50,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D9CED2D1C66702F00519DDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25EAF0EC1C6705F500E4BBD8 /* KSTokenView */ = {
+		7D9CED131C66702F00519DDA = {
 			isa = PBXGroup;
 			children = (
 				25EAF0E81C6705F500E4BBD8 /* KSToken.swift */,
 				25EAF0E91C6705F500E4BBD8 /* KSTokenField.swift */,
 				25EAF0EA1C6705F500E4BBD8 /* KSTokenView.swift */,
 				25EAF0EB1C6705F500E4BBD8 /* KSUtils.swift */,
-			);
-			name = KSTokenView;
-			path = ../KSTokenView/Examples/SwiftExample;
-			sourceTree = "<group>";
-		};
-		7D9CED131C66702F00519DDA = {
-			isa = PBXGroup;
-			children = (
-				25EAF0EC1C6705F500E4BBD8 /* KSTokenView */,
 				7D9CED1E1C66702F00519DDA /* Foodism */,
-				7D9CED331C66702F00519DDA /* FoodismTests */,
 				7D9CED1D1C66702F00519DDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				7D9CED1C1C66702F00519DDA /* Foodism.app */,
-				7D9CED301C66702F00519DDA /* FoodismTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,15 +91,6 @@
 			path = Foodism;
 			sourceTree = "<group>";
 		};
-		7D9CED331C66702F00519DDA /* FoodismTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D9CED341C66702F00519DDA /* FoodismTests.swift */,
-				7D9CED361C66702F00519DDA /* Info.plist */,
-			);
-			path = FoodismTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,24 +111,6 @@
 			productReference = 7D9CED1C1C66702F00519DDA /* Foodism.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7D9CED2F1C66702F00519DDA /* FoodismTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D9CED3C1C66702F00519DDA /* Build configuration list for PBXNativeTarget "FoodismTests" */;
-			buildPhases = (
-				7D9CED2C1C66702F00519DDA /* Sources */,
-				7D9CED2D1C66702F00519DDA /* Frameworks */,
-				7D9CED2E1C66702F00519DDA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D9CED321C66702F00519DDA /* PBXTargetDependency */,
-			);
-			name = FoodismTests;
-			productName = FoodismTests;
-			productReference = 7D9CED301C66702F00519DDA /* FoodismTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,10 +123,6 @@
 				TargetAttributes = {
 					7D9CED1B1C66702F00519DDA = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					7D9CED2F1C66702F00519DDA = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 7D9CED1B1C66702F00519DDA;
 					};
 				};
 			};
@@ -203,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				7D9CED1B1C66702F00519DDA /* Foodism */,
-				7D9CED2F1C66702F00519DDA /* FoodismTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,13 +155,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D9CED2E1C66702F00519DDA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,32 +167,16 @@
 				C4D3EB791C66CA9600A32FBA /* Add Recipe.swift in Sources */,
 				25EAF0F21C67060200E4BBD8 /* List.swift in Sources */,
 				25EAF0F61C670BDF00E4BBD8 /* KSTokenView_viewcontroller.swift in Sources */,
-				25EAF0F01C6705F500E4BBD8 /* KSUtils.swift in Sources */,
 				7D9CED221C66702F00519DDA /* ViewController.swift in Sources */,
-				25EAF0EE1C6705F500E4BBD8 /* KSTokenField.swift in Sources */,
 				7D9CED201C66702F00519DDA /* AppDelegate.swift in Sources */,
-				25EAF0EF1C6705F500E4BBD8 /* KSTokenView.swift in Sources */,
-				25EAF0ED1C6705F500E4BBD8 /* KSToken.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D9CED2C1C66702F00519DDA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D9CED351C66702F00519DDA /* FoodismTests.swift in Sources */,
+				25C5BAFF1C67297100DD5C9E /* KSToken.swift in Sources */,
+				25C5BB001C67297100DD5C9E /* KSTokenField.swift in Sources */,
+				25C5BB011C67297100DD5C9E /* KSTokenView.swift in Sources */,
+				25C5BB021C67297100DD5C9E /* KSUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7D9CED321C66702F00519DDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D9CED1B1C66702F00519DDA /* Foodism */;
-			targetProxy = 7D9CED311C66702F00519DDA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7D9CED231C66702F00519DDA /* Main.storyboard */ = {
@@ -391,30 +304,6 @@
 			};
 			name = Release;
 		};
-		7D9CED3D1C66702F00519DDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FoodismTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cgmonster.FoodismTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodism.app/Foodism";
-			};
-			name = Debug;
-		};
-		7D9CED3E1C66702F00519DDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FoodismTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cgmonster.FoodismTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodism.app/Foodism";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,15 +321,6 @@
 			buildConfigurations = (
 				7D9CED3A1C66702F00519DDA /* Debug */,
 				7D9CED3B1C66702F00519DDA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D9CED3C1C66702F00519DDA /* Build configuration list for PBXNativeTarget "FoodismTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D9CED3D1C66702F00519DDA /* Debug */,
-				7D9CED3E1C66702F00519DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
