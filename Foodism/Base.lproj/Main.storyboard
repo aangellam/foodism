@@ -139,7 +139,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1U-4z-NI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="469"/>
+            <point key="canvasLocation" x="522" y="441"/>
         </scene>
         <!--Add Recipe-->
         <scene sceneID="CMj-mG-9Jh">
@@ -269,7 +269,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="595" y="-278"/>
+            <point key="canvasLocation" x="522" y="-278"/>
         </scene>
         <!--Token View viewcontroller-->
         <scene sceneID="9ne-TI-A22">
@@ -336,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0O-m3-fjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="-937"/>
+            <point key="canvasLocation" x="527" y="-933"/>
         </scene>
         <!--PageController-->
         <scene sceneID="5qC-1I-8p6">
@@ -379,7 +379,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEb-fS-ZRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="469"/>
+            <point key="canvasLocation" x="886" y="441"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="emV-zq-378">
+            <objects>
+                <viewController id="fdg-mC-Kad" customClass="splashViewController" customModule="Foodism" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s2q-tF-19o"/>
+                        <viewControllerLayoutGuide type="bottom" id="BOG-v9-ECt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dne-rF-2kw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="first pageeee.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Yr-ol-g6D">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" id="ihN-t6-zKd"/>
+                                    <constraint firstAttribute="width" constant="320" id="oaF-jB-76j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Yr-ol-g6D" firstAttribute="leading" secondItem="dne-rF-2kw" secondAttribute="leadingMargin" constant="-20" id="L9y-mH-u4i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Yr-ol-g6D" secondAttribute="trailing" constant="-20" id="SsA-1X-b03"/>
+                            <constraint firstItem="BOG-v9-ECt" firstAttribute="top" secondItem="8Yr-ol-g6D" secondAttribute="bottom" id="UEs-eW-EVY"/>
+                            <constraint firstItem="8Yr-ol-g6D" firstAttribute="top" secondItem="dne-rF-2kw" secondAttribute="topMargin" id="sFM-jJ-dsO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6st-Sl-n1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xX2-Am-0Y2">
@@ -398,7 +431,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjo-H3-mvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227" y="487"/>
+            <point key="canvasLocation" x="150" y="447"/>
         </scene>
     </scenes>
     <resources>
@@ -407,12 +440,13 @@
         <image name="arrow white" width="167" height="136"/>
         <image name="chef hat" width="488" height="488"/>
         <image name="compass" width="488" height="488"/>
+        <image name="first pageeee.png" width="1563" height="2779"/>
         <image name="mag glasses" width="488" height="488"/>
         <image name="red arrow" width="167" height="136"/>
         <image name="search page final2" width="1548" height="2778"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wfZ-5t-MH5"/>
-        <segue reference="UBl-vc-0bn"/>
+        <segue reference="hKb-fR-8ux"/>
+        <segue reference="KUR-2K-5cF"/>
     </inferredMetricsTieBreakers>
 </document>

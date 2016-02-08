@@ -82,6 +82,11 @@ class Add_Recipe: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     
     
 
